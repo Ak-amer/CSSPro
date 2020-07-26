@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    font-family: verdana;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  html, body, main { 
+      height: calc(100% - 10px); 
+    }
+  
+  .myBox {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 5% 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "A B D"
+                            "A B E"
+                            "A C F"
+                            "A C G";
+      border: 1px solid black; 
+      border-radius: 5px; 
+      padding: 10px;
+     }
+
+     .boxA {
+         grid-area: A;
+     }
+
+     .boxB {
+        grid-area: B;
+    }
+
+    .boxC {
+        grid-area: C;
+    }
+
+    .boxD {
+        grid-area: D;
+    }
+
+    .boxE {
+        grid-area: E;
+    }
+
+    .boxF {
+        grid-area: F;
+    }
+
+    .boxG {
+        grid-area: G;
+    }
+  
+  main { 
+      background: HoneyDew; 
+      margin: 10px; 
+    }
+
+  div { 
+      background: White; 
+    }
+
